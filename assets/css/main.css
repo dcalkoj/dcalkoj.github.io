@@ -174,11 +174,6 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	.psub{
-		font-size: 12px;
-		margin-top: 0px;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: bold;
@@ -3002,11 +2997,11 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 10em;
+		height: 20em;
 	}
 
 		body.is-ie .spotlights > section {
-			min-height: 0;
+			min-height: 1em;
 		}
 
 		.spotlights > section > .image {
@@ -3076,6 +3071,10 @@ input, select, textarea {
 
 		.spotlights > section:nth-child(3) {
 			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+		.spotlights > section:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.05);
 		}
 
 		.spotlights > section.inactive > .image:before,
