@@ -147,10 +147,6 @@ input, select, textarea {
 		}
 
 	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
 		color: inherit;
 		text-decoration: none;
@@ -201,10 +197,6 @@ input, select, textarea {
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
@@ -1827,11 +1819,6 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: border-color 0.2s ease;
-		-webkit-transition: border-color 0.2s ease;
-		-ms-transition: border-color 0.2s ease;
-		transition: border-color 0.2s ease;
-		background-color: transparent;
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
 		background-color: #2191FB;
@@ -1863,10 +1850,6 @@ input, select, textarea {
 			-ms-transform: scale(0.25);
 			transform: scale(0.25);
 			pointer-events: none;
-			-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
-			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
-			transition: opacity 0.2s ease, transform 0.2s ease;
 			background: #ffffff;
 			border-radius: 3em;
 			content: '';
@@ -2009,10 +1992,6 @@ input, select, textarea {
 			}
 
 			.features section .icon {
-				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
-				transition: opacity 0.5s ease, transform 0.5s ease;
 				-moz-transition-delay: 1s;
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
@@ -3020,10 +2999,6 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image:before {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
 			background: rgba(49, 36, 80, 0.9);
 			content: '';
 			display: block;
@@ -3054,14 +3029,6 @@ input, select, textarea {
 	}
 
 		.spotlights > section > .content > .inner {
-			-moz-transform: translateX(0) translateY(0);
-			-webkit-transform: translateX(0) translateY(0);
-			-ms-transform: translateX(0) translateY(0);
-			transform: translateX(0) translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
 			opacity: 1;
 		}
 
@@ -3081,20 +3048,6 @@ input, select, textarea {
 		background-color: rgba(0, 0, 0, 0.1);
 	}
 
-
-	.spotlights > section.inactive > .image:before,
-	body.is-preload .spotlights > section > .image:before {
-		opacity: 1;
-	}
-
-	.spotlights > section.inactive > .content > .inner,
-	body.is-preload .spotlights > section > .content > .inner {
-		-moz-transform: translateX(-1em);
-		-webkit-transform: translateX(-1em);
-		-ms-transform: translateX(-1em);
-		transform: translateX(-1em);
-		opacity: 0;
-	}
 
 	@media screen and (max-width: 1680px) {
 
@@ -3117,14 +3070,6 @@ input, select, textarea {
 
 			.spotlights > section > .content {
 				width: 100%;
-			}
-
-			.spotlights > section.inactive > .content > .inner,
-			body.is-preload .spotlights > section > .content > .inner {
-				-moz-transform: translateY(1em);
-				-webkit-transform: translateY(1em);
-				-ms-transform: translateY(1em);
-				transform: translateY(1em);
 			}
 
 	}
@@ -3319,53 +3264,8 @@ input, select, textarea {
 
 			}
 
-		.wrapper.fade-up > .inner {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
-			opacity: 1.0;
-		}
-
-		.wrapper.fade-up.inactive > .inner,
-		body.is-preload .wrapper.fade-up > .inner {
-			opacity: 0;
-			-moz-transform: translateY(1em);
-			-webkit-transform: translateY(1em);
-			-ms-transform: translateY(1em);
-			transform: translateY(1em);
-		}
-
-		.wrapper.fade-down > .inner {
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-			transition: opacity 1s ease, transform 1s ease;
-			opacity: 1.0;
-		}
-
-		.wrapper.fade-down.inactive > .inner,
-		body.is-preload .wrapper.fade-down > .inner {
-			opacity: 0;
-			-moz-transform: translateY(-1em);
-			-webkit-transform: translateY(-1em);
-			-ms-transform: translateY(-1em);
-			transform: translateY(-1em);
-		}
 
 		.wrapper.fade > .inner {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
 			opacity: 1.0;
 		}
 
@@ -3576,10 +3476,6 @@ input, select, textarea {
 		}
 
 			#sidebar nav > ul > li {
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
 				-moz-transition: opacity 0.15s ease, -moz-transform 0.75s ease;
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
@@ -3796,10 +3692,6 @@ input, select, textarea {
 		}
 
 		body.is-preload #sidebar nav ul li {
-			-moz-transform: translateY(2em);
-			-webkit-transform: translateY(2em);
-			-ms-transform: translateY(2em);
-			transform: translateY(2em);
 			opacity: 0;
 		}
 
